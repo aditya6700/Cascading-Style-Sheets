@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> number based psuedo selectors</title>
+    <style>
+        *{
+            padding:0; margin:0;
+            box-sizing: border-box;
+        }
+        .maindiv{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #57606f;
+        }
+        .maindiv *{
+            padding: 10px;
+        }
+        li{
+            font-size: 2rem;
+            list-style-type: square;
+            text-transform: uppercase;
+            color: #3dc1d3;
+        }
+        li:nth-child(2n){
+            color: #f3a683;
+        }
+        li:nth-child(2n){
+            color: #f7d794;
+        }
+        li:first-child{
+            color: #f8a5c2;
+        }
+        li:last-child{
+            color: #e77f67;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+       <ul>
+           <li>one</li>
+           <li>two</li>
+           <li>three</li>
+           <li>four</li>
+           <li>five</li>
+           <li>six</li>
+           <li>seven</li>
+           <li>eight</li>
+           <li>nine</li>
+           <li>ten</li>
+       </ul>
+    </div>
+</body>
+</html>

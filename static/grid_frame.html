@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>awesome frame effect</title>
+    <style>
+        *{
+            padding:0; margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .main{
+            width: 100vw; height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container{
+            position: relative;
+            width: 50rem; height: 50rem;
+           /* width: 450px; height: 600px; */
+           /* overflow: hidden; */
+        }
+        .container > *, .blender > *{
+            position: absolute;
+            width: 50rem; height: 50rem;
+           /* width: 450px; height: 600px; */
+           /* overflow: hidden; */
+        }
+        .borderdiv{
+            border: 20px solid #eb311f;
+            transform: rotate(45deg);
+            box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+           /* animation: turn 2s linear infinite 0s;*/
+        }
+        .gridc{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        .white_ele{
+            background-color: #fff;
+        }
+       
+        .blender{
+            mix-blend-mode: multiply;
+        }
+
+        img{
+            /*object-fit: contain;*/
+            object-fit: fill;
+            height: 50rem;
+           
+        }
+        .container > img {
+            box-shadow: 0 0 20px #a7acac;
+        }
+        
+       /* @keyframes turn {
+            0%{
+                transform: rotate(45deg) ;
+            }
+            50%{
+                transform: rotate(215deg)  ;
+            }
+            100%{
+                transform: rotate(405deg) ;
+            }
+        }*/
+        
+        @media (max-width: 768px) {
+            html{
+                font-size: 35%;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+             <img src="./images/guruji.jpeg" alt=""> 
+            <!-- <img src="https://drive.google.com/uc?id=1t6spW8_Zq69JVMZL2384RAW-3AqaC8SE" alt="husky">
+                <img src="https://drive.google.com/uc?id=1pBa3CA4QyvJ60Ady6JgCfAPR8hT7pihP" alt="bngrm"> -->
+            <div class="borderdiv"></div>
+            <div class="gridc">
+                <div class="white_ele"></div>
+                <div></div>
+                <div></div>
+                <div class="white_ele"></div>
+            </div>
+            <div class="blender">
+                <img src="./images/guruji.jpeg" alt="">
+                <!--  <img src="https://drive.google.com/uc?id=1t6spW8_Zq69JVMZL2384RAW-3AqaC8SE" alt="hysky">
+                <img src="https://drive.google.com/uc?id=1pBa3CA4QyvJ60Ady6JgCfAPR8hT7pihP" alt="bngrm"> -->
+                <div class="gridc">
+                    <div></div>
+                    <div class="white_ele"></div>
+                    <div class="white_ele"></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

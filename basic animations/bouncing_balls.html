@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> bouncing balls </title>
+    <style>
+        *{
+            padding:0; margin:0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        .maindiv{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color: #CAD3C8;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 10px solid #cc8e35;
+        }
+        ul li{
+            list-style-type: none;
+            width: 60px; height: 60px;
+            border-radius: 50%;
+            margin: 0 10px;
+            animation: bounce 0.8s ease-in-out infinite;
+        }
+        ul li:nth-child(1){
+            animation-delay: 0.4s;
+            background-color: #0abde3;
+        }
+        ul li:nth-child(2){
+            animation-delay: 0.6s;
+            background-color: #ff9f43;
+        }
+        ul li:nth-child(3){
+            animation-delay: 0.8s;
+            background-color: #10ac84;
+        }
+        ul li:nth-child(4){
+            animation-delay: 1.2s;
+            background-color: #f368e0;
+        }
+        ul li:nth-child(5){
+            animation-delay: 1.4s;
+            background-color: #341f97;
+        }
+        @keyframes bounce {
+            0%{
+                transform: translateY(0x);
+            }
+            50%{
+                transform: translateY(-120px);
+            }
+            100%{
+                transform: translateY(0px);    
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

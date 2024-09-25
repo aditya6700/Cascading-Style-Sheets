@@ -1,0 +1,67 @@
+☺body{
+    margin: 0;
+    padding: 0;
+}
+
+#topbar{
+    height: 30px;
+    background-color: aquamarine;
+    padding: 10px 10%;
+    border-bottom: 1px solid cadetblue;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#navbar-brand{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: blue;
+    font-size: 25px;
+}
+
+#menu-item{
+    margin: 10px 10px;
+    text-transform: capitalize;
+    list-style-type: none;
+    position: relative;
+    float: right;
+}
+
+#mainhead{
+    height: 900px;
+    background-color: cornflowerblue;
+}
+
+.wrapper1{
+    width: 400px;
+    height: 260px;
+    background-color: lightcoral;
+}
+
+#image1{
+    width: 400px;
+    height: auto;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+}
+
+#image2{
+    width: 400px;
+    height: auto;
+    background-color: blueviolet;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+#image3{
+    width: 400px;
+    height: auto;
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> loading effects </title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+        *{
+            padding: 0; margin: 0;
+            box-sizing: border-box;
+            font-family: 'Fredoka One', cursive;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background: #535c68;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .load{
+            width: 30rem;
+            height: 30rem;
+            position: relative;
+            border-radius: 50%;
+        }
+        .circle{
+            width: 30rem;
+            height: 30rem;
+            position: absolute;
+            border-right: 1rem solid #4cd137;
+            border-radius: 50%;
+            animation: load 1.5s linear infinite;
+        }
+
+        h1{
+            color: #fff;
+            font-size: 4rem;
+            letter-spacing: 0.2rem;
+            font-weight: 400;
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+          }
+        @keyframes load {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="load">
+            <div class="circle"></div>
+            <h1>~loading~</h1>
+        </div>
+    </div>
+</body>
+</html>

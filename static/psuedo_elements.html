@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
+    <title>before and after</title>
+    <style>
+       @import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css"); 
+
+        *{
+            padding: 0; margin: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --bw-lg:10vw;
+            --bw-md:20vw;
+            --bw-sm:25vw;
+        }
+        .parent{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        h1{
+            position: absolute;
+            top: 5%;
+            font-size: 4rem;
+            margin-bottom: 12px;
+            text-align: center;
+            color: #1E90FF;
+            font-family: 'Grenze Gotisch', cursive;
+            text-shadow: 0 2px 5px rgba(63, 61, 61, 0.609);
+        }
+        h1::after{
+            font-family: 'Font Awesome\ 5 Free';
+            content: "\f005";
+            font-weight: 900;
+            font-size: 2rem;
+            display: block;
+            margin: 0 auto;
+            color: #1abc9c;
+            width: calc(100vw - 90vw);
+            height: 14px;
+            border-bottom: 5px solid #3498db;
+        }
+       
+        h2{
+            text-align: center;
+            font-size: 2.4rem;
+            color: #1E90FF;
+            font-family: 'Grenze Gotisch', cursive;
+            position: relative;
+            text-shadow: 0 2px 5px rgba(63, 61, 61, 0.609);
+        }
+        h2::before{
+            content: "";
+            position: absolute;
+            top: 5%;  left: 50%; width: var(--bw-lg);
+            transform: translateX(-50%);
+            border-bottom: 5px solid rgb(47, 43, 43);
+        }
+        h2::after{
+            content: "";
+            position: absolute;
+            bottom: -10%; left: 50%;  width: var(--bw-lg);
+            transform: translateX(-50%);
+            border-bottom: 5px solid rgb(47, 43, 43);
+        }
+        @media (min-width: 767px) and (max-width: 990px) {
+            h2::before{
+                width: var(--bw-md);
+            }
+            h2::after{
+                width: var(--bw-md);
+            }
+        }
+        @media (max-width: 768px) {
+            h2::before{
+                width: var(--bw-sm);
+            }
+            h2::after{
+                width: var(--bw-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>masteroot</h1>
+        <h2>Sai Aditya Devulapalli</h2>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color picker</title>
+    <style>
+        *{
+            padding:0; margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        .main{
+            width: 100vw; height: 100vh;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .centerdiv{
+            width: calc(100vw - 50vw);
+            height: calc(100vh - 30vh);
+            border: 1px solid #000;
+            box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+            position: relative;
+        }
+        
+        .centerdiv h1{
+            font-size: 3rem;
+            padding: 2rem 0 2rem 2rem;
+            letter-spacing: 0.2rem;
+            text-transform: capitalize;
+        }
+
+        .piechart{
+            background: 
+            radial-gradient(circle closest-side,
+            transparent 100%,#fff 0),
+            conic-gradient(red,yellow,lime,aqua,blue,magenta,red);
+            min-width: 30rem;
+            min-height: 30rem;
+        }
+
+        .centerdiv p{
+            font-size: 1.5rem;
+            letter-spacing: 0.2rem;
+            position: absolute;
+            left: 1rem;
+            bottom: 1.5rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="centerdiv">
+            <h1>CSS color picker</h1>
+            <div class="piechart"></div>
+            <p>This is done with the help of conic-gradient</p>
+        </div>
+    </div>
+</body>
+</html>

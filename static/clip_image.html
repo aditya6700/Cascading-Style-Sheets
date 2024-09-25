@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image clipping </title>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0; margin:0;
+            box-sizing: border-box;
+            font-family: 'Rowdies', cursive;
+        }
+        .maindiv{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #000;
+        }
+        h1{
+            color: transparent;
+            font-size: 6rem;
+            background-image: url('https://images.pexels.com/photos/2170473/pexels-photo-2170473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -ms-background-clip: text;
+        }
+     
+        
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+       <h1>Sai Aditya Devulapalli</h1>
+    </div>
+</body>
+</html>

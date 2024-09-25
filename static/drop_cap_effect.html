@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop cap effect</title>
+    <style>
+        *{
+            padding: 0; margin: 0;
+            box-sizing: border-box;
+        }
+        .main_section{
+            width: 100%;
+            height: 100vh;
+            background:  #40407a;
+            display: flex;
+            padding: 0 80px;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;    
+        }
+        p{
+            color: white;
+            text-align: justify;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+        }
+        p.first_para::first-letter{
+            color: rgb(0, 230, 0);
+            font-size: 50px;
+            float: left;
+            margin-right: 5px;
+        }      
+        p.first_para::first-line{
+            color: rgb(0, 230, 0);
+        }
+        p.second_para::first-letter{
+            color: rgb(0, 230, 0);
+            font-size: 50px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_section">
+        <div class="center">
+            <p class="first_para">
+               D Sai Aditya Devulapalli, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                magna aliqua. Pellentesque elit eget gravida cum. Nunc scelerisque viverra mauris in aliquam sem fringilla ut 
+                morbi. Eu facilisis sed odio morbi quis commodo odio aenean sed. Auctor augue mauris augue neque gravida. 
+                Diam sit amet nisl suscipit. Phasellus vestibulum lorem sed risus ultricies tristique nulla. 
+                Imperdiet dui accumsan sit amet nulla facilisi morbi tempus iaculis. 
+                In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. 
+                Sit amet tellus cras adipiscing enim eu. Nibh ipsum consequat nisl vel pretium lectus quam id. 
+                Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Odio morbi quis commodo odio aenean sed 
+                adipiscing diam donec. Risus in hendrerit gravida rutrum quisque non tellus orci. Habitant morbi tristique 
+                senectus et netus. Non arcu risus quis varius quam quisque. Mauris augue neque gravida in fermentum et 
+                sollicitudin. Sed odio morbi quis commodo odio aenean sed. Porta lorem mollis aliquam ut porttitor leo a diam.
+                 Amet nisl purus in mollis nunc sed id.
+            </p>  <br>
+            <p class="second_para">
+                Aliquam id diam maecenas ultricies mi. Id ornare arcu odio ut sem nulla. Tincidunt ornare massa eget egestas 
+                purus viverra accumsan. Consectetur a erat nam at lectus urna duis convallis convallis. Tristique senectus et 
+                netus et malesuada fames ac turpis egestas. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor. 
+                Pellentesque eu tincidunt tortor aliquam. Vitae tempus quam pellentesque nec nam aliquam sem. Feugiat nisl 
+                pretium fusce id velit ut. Vel turpis nunc eget lorem dolor sed viverra ipsum.
+            </p>  <br>
+            <p>Id diam maecenas ultricies mi eget. Pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat. 
+                Nec ultrices dui sapien eget. Maecenas sed enim ut sem. Id aliquet lectus proin nibh nisl condimentum id 
+                venenatis. Id donec ultrices tincidunt arcu. Enim sit amet venenatis urna cursus eget nunc. Ultrices eros 
+                in cursus turpis massa tincidunt dui ut ornare. Malesuada pellentesque elit eget gravida cum sociis natoque 
+                penatibus et. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla.
+            </p>   
+        </div>
+    </div>
+</body>
+</html>

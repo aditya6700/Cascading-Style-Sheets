@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" 
+        integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" 
+        crossorigin="anonymous" />
+    <title> dailer </title>
+    <style>
+        *{
+            padding:0; margin:0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        
+        .maindiv{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color: #1e272e;
+        }
+        .cir{
+            width: 140px;
+            height: 140px;
+            background-color: #0652DD;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+        }
+        .cir::before{
+            content: '';
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            border-radius: 50%;
+            position: absolute;
+            border: 2px solid #0652DD;
+            animation: dial 1.5s linear infinite;
+        }
+        .cir::after{
+            content: '';
+            width: calc(100% + 40px);
+            height: calc(100% + 40px);
+            border-radius: 50%;
+            position: absolute;
+            border: 2px solid #0652DD;
+            animation: dial 1.5s linear infinite;
+            animation-delay: 0.4s;
+        }
+        @keyframes dial {
+           0%{
+                transform: scale(0.5);
+                opacity: 0;
+           }
+           50%{
+                transform: scale(1);
+                opacity: 1;
+           }
+            100%{
+                transform: scale(1.2);
+                opacity: 0;
+            }               
+        }
+        i{
+            color: #fff;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="cir">
+            <i class="fa fa-3x fa-phone" aria-hidden="true"></i>
+        </div>
+    </div>
+</body>
+</html>

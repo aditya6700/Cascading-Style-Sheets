@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" 
+    crossorigin="anonymous" />
+    <title>icon hover</title>
+    <style>
+        *{
+            padding:0; margin:0;
+            box-sizing: border-box;        }
+        
+        .maindiv{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background-color: #f5f6fa;
+        }
+        a{
+            height: 120px; width: 120px;
+            border-radius: 50%;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color: #f5f6fa;
+            box-shadow: 0 5px 10px 6px #dcdde1;
+            position: relative;
+            overflow: hidden;
+        }
+        a i{
+            transition: all 0.3s linear;
+        }
+        .fa-instagram{
+            color: #e84393;
+        }
+        .fa-whatsapp{
+            color: #4cd137;
+        }
+        .fa-twitter{
+            color: #00a8ff;
+        }
+        .fa-facebook{
+            color: #273c75;
+        }
+        .fa-linkedin{
+            color: #0097e6;
+        }
+        a:hover i{
+            transform: scale(1.2);
+            color: #fff;
+        }
+
+        a::before{
+            content: '';
+            height: 120%; width: 120%;
+            background-color: #00a8ff;
+            position: absolute;
+            top: 92%; left: -50%;
+            transform: rotate(60deg);
+        }
+        a:hover::before{
+            animation: swing 0.8s 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes swing {
+            0%{
+                top: 92%; left: -50%;
+            }
+            50%{
+                top: -60%; left: -10%;
+            }
+            100%{
+                top: -10%; left: -10%;
+            }
+        } 
+
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa fa-3x fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <i class="fa fa-3x fa-linkedin"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa fa-3x fa-facebook"></i>
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+            <i class="fa fa-3x fa-twitter"></i>
+        </a>
+        <a href="https://www.whatsapp.com/" target="_blank">
+            <i class="fa fa-3x fa-whatsapp"></i>
+        </a>
+    </div>
+</body>
+</html>

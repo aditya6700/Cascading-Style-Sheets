@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" 
+    integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" 
+    crossorigin="anonymous" />
+    <title>css advance hover effects </title>
+    <style>
+        *{
+            padding:0; margin:0;
+            box-sizing: border-box;
+        }
+        .maindiv{
+            width:100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        a{
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 2px 3px 8px 3px #7f8fa6;
+        }
+        img{
+            height: 100%;
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        i{
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(1500%,-50%);
+            color: white;
+            z-index: 8;
+            transition: all 0.4s linear;
+
+        }
+        a::after{
+            content: '';
+            width: calc(100% + 100px) ; 
+            height: calc(100% + 100px);
+            position: absolute;
+            top: 50%; left: 50%;
+            background-color: rgba(24, 255, 255, 0.8);
+            transform: translate(-140%,-50%);
+            border-radius: 50%;
+            transition: all 0.5s linear;
+        }
+        a:hover::after{
+            transform: translate(-50%,-50%);
+
+        }
+        a:hover i{
+            transform: translate(-50%,-50%);
+
+        }
+        @media (max-width:768px) {
+            .maindiv{
+                flex-direction: column;
+            }
+            .search{
+                margin: 15px;
+            }
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <a href="https://en.wikipedia.org/wiki/Charminar" class="search" target="_blank" >
+            <img src="https://media.gettyimages.com/photos/hyderabad-blues-picture-id175804012?k=6&m=175804012&s=612x612&w=0&h=3IrVO8cX68D_-zDLpPQPNN5niyazD_Q_3eJOJykdMA8=" alt="charminar">
+            <i class="fa fa-2x fa-search" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.tajmahal.gov.in/" class="search" target="_blank" >
+            <img src="https://media.gettyimages.com/photos/taj-mahal-and-its-reflection-in-pool-hdr-picture-id124688183?k=6&m=124688183&s=612x612&w=0&h=G2iVFrDTWN9SSAfQx848tkOr5e3WRdOOPVBry8n-Qyw=" alt="taj mahal">
+            <i class="fa fa-2x fa-search" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.goldentempleamritsar.org/" class="search" target="_blank" >
+            <img src="https://media.gettyimages.com/photos/golden-temple-amritsar-india-picture-id185113743?k=6&m=185113743&s=612x612&w=0&h=skRLRw24d9abuw4tmqCphPXVZN6vDq3Iv4VckBLlK1E=" alt="golden temple">
+            <i class="fa fa-2x fa-search" aria-hidden="true"></i>
+        </a>
+    </div>
+</body>
+</html>

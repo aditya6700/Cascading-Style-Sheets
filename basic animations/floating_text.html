@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> floating text </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding:0; margin:0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            background: #485460;
+            position: relative;
+        }
+        .maindiv{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+        
+       h1{
+           color: #fff;
+           font-size: 54px;
+           text-shadow: 8px 15px 8px #1e272e;
+            animation: swing 2s linear alternate infinite;
+            /*animation-direction: alternate;*/
+            
+        }
+        @keyframes swing {
+            0%{
+                transform: rotate(8deg);
+            }   
+            100%{
+                transform: rotate(-8deg);
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <h1>Sai Aditya Devulapalli  <br> masteroot </h1>
+    </div>
+</body>
+</html>

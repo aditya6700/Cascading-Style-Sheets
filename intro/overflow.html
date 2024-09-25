@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: coral;
+        }
+        .image-section{
+            width: 500px;
+        }
+
+        #image-wrapper{
+            height: 400px;
+            width: 500px;
+            margin: 100px 30%;
+        }
+        .img-wrapper-1{
+            background-color: aquamarine;
+            overflow: visible;
+            margin-bottom: 100px;
+        }
+        .img-wrapper-2{
+            background-color: plum;
+            overflow: hidden;
+            margin-bottom: 100px;
+        }
+        .img-wrapper-3{
+            background-color: palevioletred;
+            overflow: scroll;
+            margin-bottom: 100px;
+        }
+        .img-wrapper-4{
+            background-color: lightcoral;
+            overflow: auto;
+        }
+    </style>
+</head> 
+<body>
+    <div class="img-wrapper-1" id="image-wrapper">
+        <img class="image-section" src="../images/1.jpg" alt="images">
+    </div>
+    <div class="img-wrapper-2" id="image-wrapper">
+        <img class="image-section"1 src="../images/5.jpg" alt="images" style="width: 800px; height:700px">
+    </div>
+    <div class="img-wrapper-3" id="image-wrapper">
+        <img class="image-section" src="../images/6.jpg" alt="images">
+    </div>
+    <div class="img-wrapper-4" id="image-wrapper">
+        <img class="image-section1" src="../images/7.jpg" alt="images">
+    </div>
+</body>
+</html>

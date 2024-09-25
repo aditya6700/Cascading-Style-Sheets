@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+
+/*  text styling 
+    border styling 
+    margin and padding
+*/ 
+.text-style{
+    background-color: aquamarine;
+    margin: 15px;
+    border: 5px dotted blue;
+    padding: 20px 18px 15px 15px;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-style: uppercase;
+    text-transform: uppercase;
+    color: crimson;
+    text-align: center;
+}
+
+h3{
+    padding: 10px;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: right;
+}
+
+#text-body1{
+    margin: 10px;
+    line-height: 25px;
+    border: 2px dashed green;
+    text-align: left;
+}
+
+#text-body2{
+    margin: 10px;
+    line-height: 30px;
+    border: 2px dashed green;
+    text-align: justify;
+}
+
+
+/*  list styling  */
+.list-style{
+    background-color: burlywood;
+    margin: 15px;
+    border: 5px double chocolate;
+    padding: 20px 18px 15px 15px;
+}
+
+.order-list1{
+    width: 500px;
+    list-style-type: upper-alpha;
+    padding-left: 20px;
+    list-style-position: inside;
+}
+.unorder-list1{
+    width: auto;
+    list-style-type: square;
+    list-style-position: outside;  /*default*/
+}
+
+
+/*  link styling  */
+
+.link-style{
+    background-color: powderblue;
+    margin: 15px;
+    border: 5px dashed cornflowerblue;
+    padding: 20px 18px 15px 15px;
+}
+
+.link-states{
+    list-style-type: upper-roman;
+    font-size: 20px;
+}
+
+.links{
+    padding-left: 25px;
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.links:link{
+    color: blueviolet
+}
+.links:visited{
+    color: green
+}
+.links:hover{
+    color: red
+}
+.links:active{
+    color: darkblue
+}
+
+/*  button styling  */
+
+.button-style{
+    background-color: pink;
+    margin: 15px;
+    border: 5px solid palevioletred;
+    padding: 20px 18px;
+}
+
+.btn1, .btn2, .btn3, .btn4{
+    margin: 15px;
+    padding: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.btn1{
+    background-color: whitesmoke;
+    color: green;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: green;
+    color: whitesmoke;
+}
+
+.btn2{
+    background-color: red;
+    color: whitesmoke;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.btn3, .btn4{
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+#realme{
+    width: 18px;
+    height: auto;
+}

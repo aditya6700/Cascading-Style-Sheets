@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image hover effect </title>
+    <style>
+        *{
+            padding:0; margin:0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        body{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background: #485460;
+        }
+        
+        .maindiv{
+           border: 5px solid #fff;
+           overflow: hidden;
+        }
+        img{
+            width: 400px;
+            transition: all 1s linear;
+        }
+        img:hover{
+            transform: scale(1.1) rotate(-8deg);
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <img src="./images/elsa.png" alt="">
+    </div>
+</body>
+</html>
